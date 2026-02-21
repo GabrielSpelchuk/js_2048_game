@@ -71,6 +71,7 @@ button.addEventListener('click', (e) => {
     updateGameInterface();
   } else {
     game.restart();
+    changeButton();
     updateGameInterface();
   }
 });
@@ -106,9 +107,11 @@ function showFields(field = gameField, state = game.getState()) {
 }
 
 function changeButton() {
-  button.classList.remove('start');
-  button.classList.add('restart');
-  button.textContent = 'Restart';
+  if (button.classList.contains('start')) {
+    button.classList.remove('start');
+    button.classList.add('restart');
+    button.textContent = 'Restart';
+  }
 
   if (!messageStart.classList.contains('hidden')) {
     messageStart.classList.add('hidden');

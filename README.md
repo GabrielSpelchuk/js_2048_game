@@ -61,9 +61,45 @@ You can change the HTML/CSS layout if you need it.
 ## Deploy and Pull Request
 
 1. Replace `<your_account>` with your Github username in the link
-    - [DEMO LINK](https://<your_account>.github.io/js_2048_game/)
+    - [DEMO LINK](https://GabrielSpelchuk.github.io/js_2048_game/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
     - Run `npm run test` command to test your code;
     - Run `npm run test:only -- -n` to run fast test ignoring linter;
     - Run `npm run test:only -- -l` to run fast test with additional info in console ignoring linter.
 
+# 2048 game
+
+The 2048 game was created using JavaScript.
+
+# Demo
+
+[Live preview](https://GabrielSpelchuk.github.io/js_2048_game/)
+
+# Design Reference
+
+[Preview](./src/images/reference.png)
+
+# Technologies Used
+
+- HTML, SCSS, JavaScript
+
+# Getting Started
+Follow these steps to set up the project locally
+
+1. Clone the repo
+```
+git clone https://github.com/GabrielSpelchuk/js_2048_game.git
+cd js_2048_game
+```
+2. Install dependencies
+```
+npm install
+# or
+yarn install
+```
+3. Run the project locally
+```
+npm start
+# or
+yarn start
+```
